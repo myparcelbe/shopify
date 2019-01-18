@@ -1,0 +1,124 @@
+<script src="js/auto_menu.js"></script>
+<section class="page-header">
+    <img alt="Logo MyParcel" src="https://www.sendmyparcel.be/app/uploads/2018/03/myparcel-logo.svg" width="25%" />
+    <h1 class="project-name">Manuel d’installation utilisateur</h1>
+    <h2 class="project-tagline">App MyParcel BE Shopify</h2>
+</section>
+<section class="main-content">
+    <h1>Introduction</h1>
+    <p>
+        Dans ce manuel, nous vous expliquons comment installer et configurer l’application dans votre environnement Shopify. Celle-ci vous est proposée gratuitement par MyParcel BE. Nous vous aiderons avec plaisir en cas de question sur le fonctionnement de l’application.<br><br>
+        Toutes les fonctionnalités de l’application ont été testées dans un environnement Shopify standard.<br><br>
+        Les prix affichés dans les fenêtres sont indiqués à titre d’exemple et peuvent différer des tarifs réels. Les prix corrects peuvent être consultés sur votre compte dans
+        <a target="_blank" href="https://backoffice.sendmyparcel.be/prices">tarifs</a>.
+    </p>
+
+    <h1>Sommaire</h1>
+    <div class="menu"></div>
+    <div>
+        <h1 id="1">1 Installation</h1>
+        <h2 id="1_1">1.1 Via l’App Store de Shopify</h2>
+        <ol>
+            <li>Accédez directement à l’application MyParcel BE via ce<a target="_blank" href="https://apps.shopify.com/myparcel-be-1">lien</a>. Si le lien ne fonctionne pas, recherchez<span class="nice">MyParcel BE</span> dans l’App Store de Shopify.</li>
+            <li>Cliquez sur le bouton ‘Get’ et suivez les étapes.</li>
+        </ol>
+
+        <h1 id="2">2 Paramétrage de l’application</h1>
+        <h2 id="2_1">2.1 Paramétrer le couplage</h2>
+        <p>Après l’installation, MyParcel être ajouté dans les <span class="nice">Apps</span>.</p>
+        <img src="media/MyParcelNL ~ Apps ~ Shopify.png"/>
+        <p>Pour ajouter votre clé API et parcourir tous les autres paramètres, cliquez sur l’application MyParcel BE et ensuite sur <span class="nice">Paramètres</span>.</p>
+
+        <img src="media/MyParcelNL ~ Bestellingen.png"/>
+
+        <p>C’est ici que vous devez ajouter votre clé API. Pour utiliser l’application MyParcel BE, vous devez créer un compte MyParcel BE. Créez votre compte <a target="_blank" href="https://backoffice.sendmyparcel.be/registration"> sans engagement</a> pour obtenir votre <a target="_blank" href="https://backoffice.sendmyparcel.be/settings">clé API</a>.</p>
+
+        <p>Ensuite, choisissez vos préférences d’imprimante et la référence de l’étiquette. Vous préférez par exemple que MyParcel BE organise l’exécution du processus dans Shopify ? Cochez alors l’option <span class="nice">Automatique</span>.</p>
+
+        <img src="media/MyParcelNL ~ Apps ~ Instellingen 1.png"/>
+
+        <h2 id="2_2">2.2 Paramètres d'exportation standards</h2>
+        <p>
+            L’application MyParcel BE récupérera les <span class="nice">modes d'expédition</span> existants. Pour exporter des commandes vers MyParcel BE, il convient d’abord de coupler celles-ci, et d’éventuelles options d’expédition, à MyParcel BE. <br><br>
+            Si vous n’avez pas encore créé de modes d’expédition, allez dans <span class="nice">Settings - Shipping</span> dans votre environnement Shopify.
+
+            Nous vous conseillons de créer différents modes d’expédition. Vous souhaitez proposer des points de collecte pour vos clients en Belgique ? Créez un mode d’expédition distinct avec le titre <span class="nice">Envoi au point de collecte bpost (à sélectionner après le paiement)</span>, par exemple. Votre client saura ainsi exactement à quoi s’attendre.
+        </p><br><br>
+
+        <img src="media/MyParcelNL ~ Apps ~ Exportinstellingen.png"/><br><br>
+        <p>
+            Cliquez sur un <span class="nice">mode d’expédition</span> pour indiquer comment vous souhaitez l’exporter.  <br><br>
+            Faites votre choix pour un type d’envoi. Vous avez aussi la possibilité d’ajouter des options d'expédition complémentaires. Bien sûr, il est également possible de ne pas lier un mode d’expédition à MyParcel BE.
+        </p><br><br>
+
+        <img src="media/MyParcelNL ~ Apps ~ Exportinstellingen 1.png"/>
+
+        <h2 id="2_3">2.3 Points de collecte bpost</h2>
+        <p>L’application MyParcel BE offre la possibilité à vos clients situés en Belgique de choisir, au moment de leur commande,<span class="nice">un point de collecte bpost</span> en fonction de leur code postal et de leur numéro de rue. Voici ce que cela donne sur la page de remerciement de Shopify</p><br><br>
+
+        <img src="media/MyParcelNL ~ Afhaallocatie.png"/><br><br>
+        <p>
+            <b>Important</b><br>
+            Avec Shopify, il est uniquement possible de proposer des options de livraison après le paiement. MyParcel BE est donc obligé de placer l’option de livraison sur la page de remerciement de Shopify. <br><br>
+
+            En plus de cette option de livraison, nous offrons également la possibilité d’envoyer un e-mail de rappel à votre client après 30 minutes, si celui-ci a oublié de choisir un point de collecte.  Dans cet e-mail, votre client aura à nouveau la possibilité de choisir le point.  
+        </p><br><br>
+
+        <img src="media/MyParcelNL ~ Apps ~ instellingen 2.png"/><br><br>
+
+        <b>Important</b><br>
+        <p>Si vous utilisez un mode d’expédition qui permet au client de choisir un point de collecte,  nous vous recommandons d’activer cette fonctionnalité. Si votre client n’a pas choisi de point de collecte, la commande ne pourra pas être exportée vers MyParcel BE.</p>
+
+        <h2 id="2_4">2.4 Envoi internationaux</h2>
+        <p>
+            Outre les commandes belges et européennes, l’application MyParcel BE permet aussi de créer des commandes pour le reste du monde (formulaire de douane compris). Spécifiez un <span class="nice">poids</span> standard si vous envoyez toujours le même type de produit.<br><br>
+            Vous pouvez bien sûr également définir <span class="nice">le poids</span> par produit. Comme vous pouvez le voir ci-dessous, il est possible d’indiquer le poids au niveau du produit. L’application MyParcel BE inclura ces informations lors de l’exportation. <br><br>
+        </p>
+
+        <img src="media/MyParcelBE _ Wereldzending.png"/>
+
+        <h1 id="3">3 Commandes</h1>
+        <h2 id="3_1">3.1 Créer des commandes et des étiquettes d'expédition</h2>
+        <p>
+            Via l’application MyParcel BE, il est possible d’exporter des commandes (par lot) et de générer des étiquettes d'expédition de deux manières. Cela peut se faire dans l’aperçu des commandes original ou sur la page principale de l’application MyParcel BE. <br><br>
+            Dans l’aperçu de commandes original, sélectionnez vos commandes, cliquez sur le bouton <span class="nice">Actions</span>,puis sur <span class="nice">Print labels</span> sous ‘Apps’.
+        </p><br><br>
+
+        <img src="media/MyParcelNL ~ orderoverzicht.png"/><br><br>
+
+        <p>Vous trouverez davantage d’informations dans l’aperçu de l’application MyParcel BE que sur la page de commande d'origine. Vous voulez savoir quel code-barres est lié à la commande ou modifier une commande en particulier en ajoutant une option d’expédition supplémentaire ? Nous vous conseillons d’utiliser l’aperçu ci-dessous.</p><br><br>
+
+        <img src="media/MyParcelNL ~ Order printen.png"/>
+
+        <h2 id="3_2">3.2 Modifier une commande</h2>
+        <p>Comme décrit dans la section précédente, vous pouvez ajuster les options d’expédition par commande. Vous souhaitez assurer l’envoi d’une commande spécifique, demander une signature pour réception ou créer plusieurs étiquettes pour une commande ? C’est possible en cliquant sur la commande dans l’aperçu de l’application MyParcel BE.</p><br><br>
+
+        <img src="media/MyParcelBE _ Details_bestelling.png"/>
+
+        <h2 id="3_3">3.3 Créer une étiquette de retour</h2>
+        <p>Si votre client désire renvoyer son colis, vous pouvez lui envoyer une étiquette de retour depuis la commande. Cette étiquette de retour est envoyée à l’adresse e-mail spécifiée par votre client dans la commande.</p><br><br>
+
+        <img src="media/MyParcelNL ~ Retour.png"/><br><br>
+
+        <p>
+            Tous les paramètres que vous avez définis dans votre environnement MyParcel BE sont utilisés pour cette fonctionnalité de retour. Ce renvoi doit toutefois remplir un certain nombre de <span class="nice">conditions</span>. En effet, une étiquette d’expédition doit avoir été créée et la fonctionnalité est limitée à la Belgique. <br>
+        </p>
+
+        <h1 id="4">4 Besoin d’aide?</h1>
+        <p>Si vous avez des questions concernant l’installation ou l’utilisation du plug-in, n’hésitez pas à nous contacter. Vos conseils et suggestions en vue d’améliorer le fonctionnement du plug-in sont également les bienvenus. Envoyez-nous un e-mail à </strong><a href="mailto:info@sendmyparcel.be">info@sendmyparcel.be</a> ou téléphonez au 03 808 18 20.</p>
+    </div>
+
+    <footer class="site-footer">
+        <p>
+            <span class="site-footer-owner"><a target="_blank" href="https://www.sendmyparcel.be">SendMyParcel</a></span>
+        </p>
+        <p>
+            <span class="site-footer-credits">
+                <strong>Adresse </strong>	Adriaan Brouwerstraat 16, 2000 Antwerpen<br>
+                <strong>Téléphone </strong>03 808 18 20&nbsp;
+                <strong>E-mail</strong><a href="mailto:info@sendmyparcel.be">&nbsp;info@sendmyparcel.be</a><br>
+                <strong>Site internet </strong><a target="_blank" href="https://www.sendmyparcel.be">www.sendmyparcel.be</a>&nbsp;
+            </span>
+        </p>
+    </footer>
+</section>
